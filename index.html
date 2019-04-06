@@ -9,7 +9,13 @@
   </head>
   <body>
     <a-scene>
-            <a-entity id="riiul" position="0 0 -5"><a-box position="0 0 0" rotation="0 0 0" width="3" height="3" depth="0.1" color="#9c7616"></a-box>
+        <a-assets>
+        <a-asset-item id="chair-obj" src="https://raw.githubusercontent.com/ukuvolke/Raamatukogu/master/HSM0006.obj"></a-asset-item>
+        <a-asset-item id="materjal" src="https://raw.githubusercontent.com/ukuvolke/Raamatukogu/master/HSM0006.mtl"></a-asset-item>
+        <a-asset-item id="pieces" src="https://raw.githubusercontent.com/ukuvolke/Raamatukogu/master/CasualSectionalArmChair_424236.jpg"></a-asset-item>
+      <img id="sky" src="taust.jpg">
+            </a-assets>    
+        <a-entity id="riiul" position="0 0 -5"><a-box position="0 0 0" rotation="0 0 0" width="3" height="3" depth="0.1" color="#9c7616"></a-box>
                 <a-box position="1.5 0 0.44" rotation="0 90 0" width="1" height="3" depth="0.1" color="#b08519"></a-box>
                 <a-box position="-1.5 0 0.44" rotation="0 90 0" width="1" height="3" depth="0.1" color="#b08519"></a-box>
                 <a-box position="0 1.5 0.44" rotation="90 90 0" width="1" height="3.1" depth="0.1" color="#b08519"></a-box>
@@ -28,21 +34,15 @@
         <a-box position="0 0.90 -6.5" rotation="90 0 0" width="0.6" height="0.05" depth="0.2" color="#D2691E"></a-box>
      </a-entity>
         <a-entity id="chair">
-       <a-assets>
-        <a-asset-item id="chair-obj" src="https://raw.githubusercontent.com/ukuvolke/Raamatukogu/master/HSM0006.obj"></a-asset-item>
-        <a-asset-item id="materjal" src="https://raw.githubusercontent.com/ukuvolke/Raamatukogu/master/HSM0006.mtl"></a-asset-item>
-        <a-asset-item id="pieces" src="https://raw.githubusercontent.com/ukuvolke/Raamatukogu/master/CasualSectionalArmChair_424236.jpg"></a-asset-item>
+       
         <a-obj-model src="#chair-obj" mtl="#materjal" jpg="#pieces" positsion="0 0 -3" scale="3 3 3"></a-obj-model>
-      </a-assets>
       <a-entity id="raamat1" position="0 0 -5" >
       <a-box color="tomato" position="1.5 0 0.44" rotation="-3 90 0" width="0.8" height="1.4" depth="0.2" color="#D2691E"></a-box>
       </a-entity>
            </a-entity>
      
       
-        <a-assets>
-          <img id="sky" src="taust.jpg">
-        </a-assets>
+      
         <a-sky src="#sky"></a-sky>
       
   </a-scene>
