@@ -8,6 +8,7 @@
   </head>
   <body>
     <a-scene>
+      <a-entity id="tool">
         <a-box position="0.25 0.25 -6.5" rotation="0 0 0" width="0.05" height="0.5" depth="0.025" color="#D2691E"></a-box>
         <a-box position="-0.25 0.25 -6.5" rotation="0 0 0" width="0.05" height="0.5" depth="0.025" color="#D2691E"></a-box>
         <a-box position="0.25 0.25 -6.2" rotation="0 0 0" width="0.05" height="0.5" depth="0.025" color="#D2691E"></a-box>
@@ -16,10 +17,13 @@
         <a-box position="0.25 0.75 -6.5" rotation="0 0 0" width="0.05" height="0.5" depth="0.025" color="#D2691E"></a-box>
         <a-box position="-0.25 0.75 -6.5" rotation="0 0 0" width="0.05" height="0.5" depth="0.025" color="#D2691E"></a-box>
         <a-box position="0 0.90 -6.5" rotation="90 0 0" width="0.6" height="0.05" depth="0.2" color="#D2691E"></a-box>
+     </a-entity>
+      <a-entity id="taust"> 
         <a-assets>
           <img id="sky" src="taust.jpg">
         </a-assets>
         <a-sky src="#sky"></a-sky>
+      </a-entity> 
       
   </a-scene>
   </body>
